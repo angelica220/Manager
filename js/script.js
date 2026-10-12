@@ -37,4 +37,24 @@ btnLowCase.addEventListener(`click`, function () {
     }
 })
 
+// сортировка по имени задачи по алфавиту
+const btn1 = document.getElementById("btn")
+function compare(a, b) { // функция сравнения для сортировки
+    // если первое значение больше второго
+    if (a.querySelector("span").innerHTML > b.querySelector("span").innerHTML) return 1
+    // если равны
+    if (a.querySelector("span").innerHTML == b.querySelector("span").innerHTML) return 0
+    // если первое значение меньше второго
+    if (a.querySelector("span").innerHTML < b.querySelector("span").innerHTML) return -1
+}
+
+btn1.addEventListener(`click`, function(){
+    let newTasks = [...tasks].sort(compare) // преобразуем коллекцию в массив
+
+    container.innerHTML = "" // очищаем контейнер
+
+    for (let i in newTasks) { // перебор всех элементов в массиве
+        container.append(newTasks[i]) // добавление новых элементов в контейнер
+    }
+})
 
