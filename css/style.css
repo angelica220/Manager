@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(255, 236, 230);
+    height: 100vh;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.tasks {
+    border: 1px solid black;
+    min-height: 200px;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.task {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.filters {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
