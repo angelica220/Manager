@@ -13,6 +13,9 @@ formAddTask.addEventListener("submit", function (event) {
     container.append(newTask) // добавляем задачу в контейнер задач
 
     tasks.push(newTask) // добавляем задачу в массив
+
+    // console.log(divs)
+    // console.log(nodes)
 })
 
 // функциионал - перевести все задачи в нижний регистр
@@ -59,3 +62,13 @@ btn1.addEventListener(`click`, function(){
     }
 })
 
+
+
+
+
+
+// работы с NodeList
+// let divs = document.querySelectorAll("div") // статическая коолекция
+// console.log(divs)
+// let nodes = document.querySelector(".tasks").childNodes // динамическая коллекция
+// console.log(nodes)
