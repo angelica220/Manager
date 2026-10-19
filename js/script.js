@@ -12,6 +12,10 @@ formAddTask.addEventListener("submit", function (event) {
     newTask.classList.add("task") // добавляем у дива класс таск
     container.append(newTask) // добавляем задачу в контейнер задач
 
+    if(formAddTask.querySelector("#immediate").checked){ // если пользователь поставил галочку
+        newTask.classList.add("immadiate") // то у задачи добавляем класс immediate
+    }
+
     tasks.push(newTask) // добавляем задачу в массив
 
     // console.log(divs)
